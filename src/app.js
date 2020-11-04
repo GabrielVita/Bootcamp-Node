@@ -4,7 +4,7 @@ const cors = require("cors");
 const { v4: uuid, validate: isUuid } = require('uuid');
 
 const app = express();
-const { adicionar, contar } = require('./middleware');
+const { adicionar, contar } = require('./repositories/:id/like');
 app.use(adicionar);
 
 app.use(express.json());
